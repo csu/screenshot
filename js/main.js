@@ -32,7 +32,7 @@ function rebuildDimensions() {
 
 (function ($) {
 	$(function () {
-		$('img').attr('http://dl.dropboxusercontent.com/u/2148004/Screenshots'+location.pathname+'.png');
+		$('img').attr('src', 'http://dl.dropboxusercontent.com/u/2148004/Screenshots'+location.pathname+'.png');
 		on_resize(rebuildDimensions);
 		$('img').load(function() {
 			rebuildDimensions();
