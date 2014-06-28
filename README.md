@@ -2,6 +2,8 @@
 
 Simple Dropbox-powered screenshot single page site originally forked from [sammarks/screenshot](https://github.com/sammarks/screenshot). Note at this time this setup is dependent on you installing a OS X app called [UpShot](http://upshot.it/). If you have windows/linux this guide will not work for you unless you use different software. If anyone that uses either of these OSes for personal computing would like to provide instructions for either/both then I will accept your pull request.
 
+Example: [Screenshot of Github](http://s.joshstrange.com/VPmZ.png)
+
 
 ## Steps to setup
 
