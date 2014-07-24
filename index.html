@@ -73,7 +73,7 @@
 	<body>
 		<h1>Screenshot</h1>
 		<p>...</p>
-		<img src="" class="hidden" />
+		<a href="#"><img src="" class="hidden" /></a>
 		<span><a href="http://joshstrange.com/how-to-setup-a-dropbox-backed-screenshot-sharing-website-with-your-own-domain-on-s3/">Set this up with your own Dropbox!</a></span>
 		<script>
 			/*! jQuery v1.11.0 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
@@ -115,7 +115,8 @@
 			}
 			(function ($) {
 				$(function () {
-					$('img').attr('src', 'http://dl.dropboxusercontent.com/u/'+userId+'/Screenshots'+location.pathname);
+					var imageURL = 'http://dl.dropboxusercontent.com/u/'+userId+'/Screenshots'+location.pathname;
+					$('img').attr('src', imageURL).parents('a').attr('href', imageURL);
 					on_resize(rebuildDimensions);
 					$('img').load(function() {
 						rebuildDimensions();
