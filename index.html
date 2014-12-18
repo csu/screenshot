@@ -115,7 +115,7 @@
 			}
 			(function ($) {
 				$(function () {
-					var imageURL = 'http://dl.dropboxusercontent.com/u/'+userId+'/Screenshots'+location.pathname;
+					var imageURL = 'https://dl.dropboxusercontent.com/u/'+userId+'/Screenshots'+location.pathname;
 					$('img').attr('src', imageURL).parents('a').attr('href', imageURL);
 					on_resize(rebuildDimensions);
 					$('img').load(function() {
